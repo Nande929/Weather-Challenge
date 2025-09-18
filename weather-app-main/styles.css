@@ -1,0 +1,131 @@
+body {
+
+    background-color: hsl(243, 96%, 9%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 40px;
+    font-size: 18px;
+}
+
+header {
+
+    padding: 16px;
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.header img {
+
+    width: 120px;
+}
+
+.dropBtn {
+
+    background-color: hsl(243, 23%, 24%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.unit-icon {
+
+    width: 18px;
+    margin-right: 5px; 
+}
+
+.setting-icon {
+
+    margin-left: 5px;
+    width: 15px;
+}
+
+.weatherToday {
+
+    text-align: center;
+}
+
+form  {
+
+   
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+
+}
+
+form .search-bar {
+
+    position: relative;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 8px 8px 8px 35px;
+    width: 300px;
+    background-color: hsl(243, 23%, 24%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form .search-button {
+
+    background-color: hsl(233, 67%, 56%);
+    border: none;
+    color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-left: 10px;
+}
+
+.search-container {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-container svg {
+
+    position: absolute;
+    left: 10px;
+    width: 18px;
+    z-index: 100;
+}
+
+.main-container {
+
+    width: 100%;
+}
+
+.grid-main {
+
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.today-container {
+
+    background-image: url('assets/images/bg-today-large.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 60px 30px;
+}
+
+.icon-degree {
+
+    display: flex;
+    align-items: center;
+}
