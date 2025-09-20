@@ -23,14 +23,60 @@ header {
     width: 120px;
 }
 
-.dropBtn {
+.dropDownMenu .dropBtn {
 
     background-color: hsl(243, 23%, 24%);
     border: none;
     color: hsl(0, 0%, 100%);
     padding: 7px 12px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s;
 }
+
+.dropDownMenu .dropBtn:hover {
+
+    opacity: 0.8;
+}
+
+.dropDownMenu .content {
+
+    background-color: hsl(243, 27%, 20%);
+    position: absolute;
+    right: 60px;
+    top: 70px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+    padding: 10px 5px;
+}
+
+.dropDownMenu:hover .content{
+
+    display: block;
+}
+
+.dropDownMenu .content h5 {
+
+    margin: 10px;
+    color: hsl(240, 6%, 70%);
+}
+
+.dropDownMenu .content a {
+
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.dropDownMenu .content a:hover {
+
+    background-color: hsl(243, 23%, 24%);
+}
+
 
 .unit-icon {
 
@@ -160,7 +206,7 @@ form .search-button {
 
 .hourly-forecast h3 {
 
-    margin: 10;
+    margin: 0px;
     display: inline-block;
 }
 
@@ -169,6 +215,7 @@ form .search-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .hourly-forecast {
@@ -187,5 +234,27 @@ form .search-button {
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
+}
 
+.hourly-time-icon {
+
+    display: flex;
+    align-items: center;
+}
+
+.hourly-time-icon img {
+
+    width: 30px;
+    padding-right: 5px;
+}
+
+.hourly-details {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(243, 23%, 24%);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
 }
