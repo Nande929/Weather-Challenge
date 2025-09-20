@@ -234,6 +234,40 @@ form .search-button {
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.day-dropdown .days-content {
+
+    background-color: hsl(243, 27%, 20%);
+    position: absolute;
+    right: 100px;
+    margin: 2px 0 0 0;
+    width: 10%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+    padding: 10px 5px
+}
+
+.day-dropdown:hover .days-content {
+
+    display: block;
+}
+
+.day-dropdown .days-content a {
+
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.day-dropdown .days-content a:hover {
+
+    background-color: hsl(243, 23%, 24%);
 }
 
 .hourly-time-icon {
